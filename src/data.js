@@ -24,7 +24,7 @@ export const products = [
     id: 3,
     img: VideoResume,
     link: "https://github.com/shubham-petwal/Linkdin-Clone",
-    link1: "",
+    link1: "https://shubham-petwal.github.io/",
     title: "React Js Projects",
     project: "Linkdin Clone",
     project1: "This Portfolio",
