@@ -1,0 +1,141 @@
+/* @import "../node_modules/rfs/scss"; =>npm install --save-dev sass  */
+.i {
+  display: flex;
+  height: 100vh;
+  flex-direction: row-reverse;
+  font-weight: bold;
+}
+
+.i-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.i-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.i-intro {
+  font-size: 30px;
+  font-weight: 500;
+  
+}
+
+.i-name {
+  font-size: 60px;
+  text-shadow: 2px 2px 2px grey;
+  -webkit-text-stroke: 2px white;
+    color:rgb(147, 51, 51);
+   
+	}
+  .i-name:hover{
+    font-size: 62px;
+    text-shadow: 2px 2px 2px grey;
+    -webkit-text-stroke: 2px white;
+      color:black;
+    }
+    
+
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 5s ease-in-out infinite alternate;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px grey;
+  -webkit-text-stroke: 1px white;
+  color: rgb(147, 51, 51);
+  display: flex;
+  align-items: center;
+}
+
+.i-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.i-img {
+  width: 90%;
+  height: 125%;
+  top:-10%;
+  object-fit: contain;
+  position: absolute;
+  left:30px;
+  
+}
+
+.i-bg {
+  clip-path: inset(2% 10% 5% 5%);
+ 
+  /* //polygon shape */
+  background-color: rgb(147, 51, 51);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 30px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 680px) {
+  .i {
+    flex-direction: column;
+  }
+  .i-img {
+    width: 90%;
+    right:-20px;
+  }
+  .i-left-wrapper {
+  
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .i-desc{
+    display: none;
+  }
+  
+}
